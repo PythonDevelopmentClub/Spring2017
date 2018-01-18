@@ -1,0 +1,40 @@
+<h1>Tracks for <span class = "text-primary">{{ name }}</span> Playlist</h1>
+<!-- <button ng-click = "sortBySong()"   class = "btn btn-success">Sort By Song</button> -->
+<div class = "row text-center">
+    <img style="height:500px" src = "{{playlistImage }}">
+
+</div>
+<br>
+<br>
+
+<div class = "text-center text-danger">
+    <span ng-click = "prevPageTurn()" class = "arrow glyphicon glyphicon-arrow-left"></span>
+     Showing tracks {{ startToEnd }}
+    <span ng-click = "nextPageTurn()" class = "arrow glyphicon glyphicon-arrow-right"></span>
+</div>
+<br>
+
+<div class = "row border-bottom hoverMe" ng-repeat = "item in tracksData track by $index">
+    <br>
+    <div class = "col-md-11">
+
+        <p><b>Track: </b> {{item['track']['name']}} </p>
+        <p><b>Artist: </b> {{ item['track']['album']['artists'][0]['name'] }}</p>
+    </div>
+    <div class = "col-md-1">
+        <button class = "btn btn-danger"><span ng-click = "deleteTrack($event, $index)"  id="{{ item['track']['uri'] }}" class = "glyphicon glyphicon-trash"></span></button>
+    </div>
+    <br>
+    <br>
+</div>
+
+<br>
+<div class = "text-center text-danger">
+    <span ng-click = "prevPageTurn()" class = "arrow glyphicon glyphicon-arrow-left"></span>
+    Showing tracks {{ startToEnd }}
+    <span ng-click = "nextPageTurn()" class = "arrow glyphicon glyphicon-arrow-right"></span>
+</div>
+
+<br>
+<br>
+<br>
