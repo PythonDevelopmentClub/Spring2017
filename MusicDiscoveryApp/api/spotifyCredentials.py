@@ -1,6 +1,6 @@
 #  Client Keys
-CLIENT_ID = "96b5706aae2a49989ed8c0c8ae57004e"
-CLIENT_SECRET = "19acb72b2a724aeba90c9a8578b69ff7"
+CLIENT_ID = "96sdfsdfsdfsdb570sdfsc0c8ae57004e"
+CLIENT_SECRET = "19acbsdfsdf72bsdfsd2a7dfff7"
 
 # Spotify URLS
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
